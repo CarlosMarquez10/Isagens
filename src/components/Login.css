@@ -1,0 +1,155 @@
+.containerLogin {
+  width: 70%;
+  height: 45%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: transparent;
+  box-shadow: 4px 4px 4px 1.7px rgb(191, 103, 103);
+  border-radius: 50px;
+}
+.containerform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.CampoDato {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.iconslogin {
+  width: 28px;
+  height: 35px;
+  margin-bottom: 5px;
+  display: grid;
+  place-items: center;
+  padding: 4px;
+  background: rgb(189, 41, 39);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none;
+  color: white;
+  box-shadow: 2px 2px 2px 0.5px rgb(191, 103, 103);
+}
+
+.inptlog {
+  width: 90%;
+  height: 35px;
+  margin-bottom: 5px;
+  padding-left: 4px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: none;
+  box-shadow: 2px 2px 2px 0.5px rgb(191, 103, 103);
+}
+
+.btnLogin {
+  width: 140px;
+  height: 35px;
+  border-radius: 7px;
+  margin-top: 10px;
+  background: rgb(189, 41, 39);
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.logoinmel {
+  margin: 50px 0px 0px 130px;
+  width: 100px;
+  height: 30px;
+}
+/* 
+@keyframes rotacion {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logoinmel {
+  animation: rotacion 2s linear infinite;
+} */
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.aparecer {
+  animation: aparecer 2.8s ease-in-out;
+}
+
+@keyframes aparecer02 {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.logoinmel {
+  animation: aparecer02 4s ease-in-out;
+}
+
+/* Estilos generales que se aplican a todas las pantallas */
+
+/* Estilos para pantallas de celular */
+@media only screen and (max-width: 480px) {
+  /* Estilos específicos para pantallas de celular */
+}
+
+/* Estilos para pantallas de tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Estilos específicos para pantallas de tablet */
+}
+
+/* Estilos para pantallas de portátil */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* Estilos para pantallas de PC de escritorio de 24 pulgadas */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+/* Estilos para pantallas de 1080p */
+@media only screen and (min-width: 1921px) {
+}
+
+/* Estilos para pantallas de televisores */
+@media only screen and (min-width: 1201px) and (max-width: 1920px) {
+  .containerLogin {
+    width: 30%;
+    height: 40%;
+    padding-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #313131;
+    border: none;
+    box-shadow: 4px 4px 4px 1.7px rgb(191, 103, 103);
+    border-radius: 50px;
+  }
+
+  .logoinmel {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,95 @@
+.containerroot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #e2e6ea;
+}
+
+.imalogo {
+  width: 200px;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.imalogo {
+  animation: aparecer 2s ease-in-out;
+}
+
+
+
+/* Estilos generales que se aplican a todas las pantallas */
+
+/* Estilos para pantallas de celular */
+@media only screen and (max-width: 480px) {
+  /* Estilos específicos para pantallas de celular */
+}
+
+/* Estilos para pantallas de tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Estilos específicos para pantallas de tablet */
+}
+
+/* Estilos para pantallas de portátil */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .containerroot {
+    flex-direction: row;
+  }
+}
+
+/* Estilos para pantallas de PC de escritorio de 24 pulgadas */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .containerroot {
+    flex-direction: row;
+  }
+}
+
+/* Estilos para pantallas de 1080p */
+@media only screen and (min-width: 1921px) {
+  .containerroot {
+    flex-direction: row;
+  }
+}
+
+/* Estilos para pantallas de televisores */
+@media only screen and (min-width: 1201px) and (max-width: 1920px) {
+  .containerroot {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .imalogo {
+    width: 600px;
+    margin-left: 20px;
+    opacity: 85%;
+    filter: drop-shadow(2px 1px 5px rgba(239, 8, 8, 0.5));
+  }
+
+  @keyframes aparecer02 {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .imalogo {
+    animation: aparecer02 4s ease-in-out;
+  }
+}
